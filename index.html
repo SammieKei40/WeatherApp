@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
+   <style>
+      body{
+        background: url(weather.jpg);
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+      h1{
+        color: white;  
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+            <div class="container text-center mb-3 mt-3">
+                <h1 class="fas fa-sun">Weather Update</h1>
+                <h1 class= "fas fa-cloud"></h1>
+            </div>
+        <div class="container searchContainer">
+            <div class="search card card-body">
+                <h2>Get The Weather For a Location</h2>
+                <p class="lead">Enter Your Location</p>
+                <input type="text" id="searchUser" class="form-control" placeholder="Location....">
+            </div>
+            <br>
+            <div id="profile"></div>
+        </div>
+        <div class="container text-center mt-2">
+            <button class="btn btn-primary" id="submit">Submit</button>
+        </div>
+        
+        <div id="content">
+
+        </div>
+        <footer class="mt-5 p-3 text-center bg-light">
+             Weatherjs &copy;
+        </footer>
+  </body>
+  <script src="fetch.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</html>
